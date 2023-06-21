@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/icon.ico" type="image/x-icon">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+
+    <section class="main">
+
+        <h1>Calculadora - IMC</h1>
+
+        <div class="altura">
+            <p>Altura em centimetros:</p>
+            <input type="number" name="alturaCM" id="alturaCM" placeholder="Cm" max="300">
+        </div>
+
+        <div class="peso">
+            <p>Peso em kg:</p>
+            <input type="number" name="pesoKG" id="pesoKG" placeholder="Kg" max="500">
+        </div>
+
+        <div class="botao">
+            <input type="button" value="Calcular" id="botaoCalc" onclick="calcular()">
+        </div>
+
+        <div class="resultado">
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

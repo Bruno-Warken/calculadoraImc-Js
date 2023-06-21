@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #1c1e1f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: #4b4a4a;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+p, h1 {
+    font-weight: bold;
+    color: #fff;
+    padding: 0.3em 0 0.3em;
+}
+
+.peso, .altura, .botao {
+    padding: 5px;
+    width: 95%;
+}
+
+input {
+    border-radius: 2px;
+    height: 40px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+#pesoKG, #alturaCM {
+    background-color: #a3a1a1;
+    border: transparent;
+}
+
+#botaoCalc {
+    background-color: #11881b;
+    color: white;
+    font-weight: bold;
+    border: transparent;
+    position: relative;
+}
+
+#botaoCalc:hover{
+    background-color: #2cb438;
+    transition: background-color 0.3s;
+}
+
+#botaoCalc:active{
+    transform: translateY(1px);
+}
+
+.resultado {
+    padding: 0.5em;
+    text-align: center;
+}
+
+::placeholder { 
+    padding-right: 1em;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 425px) {
+    .main {
+        width: 300px;
+        font-size: 0.8rem;
+    }
+
+    .resultado {
+        font-size: 0.9rem;
+    }
+
+    ::placeholder {
+        font-size: 0.7rem;
+    }
+}
