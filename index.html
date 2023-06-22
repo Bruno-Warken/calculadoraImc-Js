@@ -14,22 +14,22 @@
 
         <h1>Calculadora - IMC</h1>
 
-        <div class="altura">
-            <p>Altura em centimetros:</p>
+        <!-- ao usar label, a propriedade "for" do label está ligada ao "id" do input -->
+
+        <div class="container">
+
+            <label for="alturaCM">Altura em centimetros:</label>
             <input type="number" name="alturaCM" id="alturaCM" placeholder="Cm" max="300">
-        </div>
 
-        <div class="peso">
-            <p>Peso em kg:</p>
+            <label for="pesoKG">Peso em kg:</label>
             <input type="number" name="pesoKG" id="pesoKG" placeholder="Kg" max="500">
-        </div>
 
-        <div class="botao">
             <input type="button" value="Calcular" id="botaoCalc" onclick="calcular()">
+
         </div>
 
-        <div class="resultado">
-
+        <div class="resultadoContainer">
+            <p id="resultado"></p>
         </div>
 
     </section>
